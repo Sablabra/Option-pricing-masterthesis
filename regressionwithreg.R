@@ -1,3 +1,4 @@
+##Plotting of Price and Deltas, with different weights
 source("functions.R")
 set.seed(1)
 S0<-1
