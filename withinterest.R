@@ -1,3 +1,4 @@
+##Plot of Bachlier model with interest r=0.05
 nonZeroRateBachelierCall<-function(S,T,K,vol,r){
   d<-(S*exp(r*(T))-K)/(sqrt((vol^2/(2*r))*(exp(2*r*(T))-1)))
   CallDelta<-pnorm(d,0,1)
