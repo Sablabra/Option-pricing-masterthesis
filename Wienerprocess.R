@@ -1,3 +1,4 @@
+##Plotting of the trajectory of a Wiener Process
 set.seed(1)
 x0 <- 0
 n <- 1
