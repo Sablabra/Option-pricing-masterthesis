@@ -1,4 +1,5 @@
-##SoftPlus with no regulization 3 degree
+##This has been used to plot the Polynomail and compare it to the Softplus for degree 3,6,9 and order 1,2,3 repectivly. Orders can be change in line 61, and the
+##degree of the polynomial can be changed in line 104.
 source("functions.R")
 set.seed(1)
 T = 1
