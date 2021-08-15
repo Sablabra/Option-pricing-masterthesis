@@ -1,4 +1,4 @@
-##Hedge ekspirement ML
+##Hedge ekspirement Machine learning, used the values produced in the actual expirement.
 simula <- c(1000,2000,3000,4000,5000,6000)
 
 ll1 = c(0.23191002,0.17117363,0.15281885,0.1511261,0.147391,0.14718048)
