@@ -1,4 +1,4 @@
-##Softplus vs poly without reg
+##Softplus vs poly with/without regularization. The error between Polynomial and Softplus is also plotted, and also the error between Softplus with and without regularization.
 source("functions.R")
 set.seed(1)
 T = 1
@@ -249,13 +249,13 @@ lines(k, Delta_error, col = "blue")
 legend("topright" , legend=c("Polynomial regression", "Softplus regression"),
        col=c("red","blue" ),lty=1,  cex = 0.75)
 
-##Softplus vs Softplus
+##Softplus vs Softplus price
 x = 1:14
 plot(x,Price_error,type = "l", col = "red",ylim=c(0,0.0008),ylab = "error",xlab="order of SoftPlus")
 lines(x, Price_errorsoftnoreg, col = "blue")
 legend("topright" , legend=c("no diff regulization", "with diff regulization"),
        col=c("blue","red" ),lty=1,  cex = 0.75)
-
+##Softplus vs Softplus Delta
 x = 1:14
 plot(x,Delta_error,type = "l", col = "red",ylim=c(0,0.008),ylab = "error",xlab="order of SoftPlus")
 lines(x, Delta_errorsoftnoreg, col = "blue")
