@@ -1,4 +1,5 @@
-##Hedge for softplus
+##Hedge expirement using the SoftPlus function. First by setting S = seq(0.10,1.9999,c) giving us N=19000. Change the order is done in line 77. 
+#We also used regular simulation for the hedge expirement, where one can change order in line 233, and the number of simulation in line 171
 source("functions")
 set.seed(1)
 S0 = 1
@@ -154,13 +155,7 @@ z<-sd(CallPayoff-Vpf)/Initialprice
 print(round(c(z,1.96*sqrt(2)*z/sqrt(Npaths)),8))
 
 
-##with regulization
-## m=1   0.12026009
-##m=2    0.1209848
-
-
-
-##Hedge for softplus simulering
+##Hedge for softplus simulation
 source("functions")
 S0 = 1
 T = 1
@@ -235,9 +230,9 @@ if (length(x) == 4){
 }
 
 
-max_order = 2
-errorHedge = matrix(0,max_order,1)
-for (h in 1:max_order){
+order = 2
+errorHedge = matrix(0,order,1)
+for (h in 1:order){
   if (h==1){
     x = c(0,0,0,0)
   } else {
