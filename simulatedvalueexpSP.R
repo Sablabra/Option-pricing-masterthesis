@@ -1,4 +1,4 @@
-##Simulation study
+##Simulation study of the SoftPlus function, where we first plotted the approximations and then plotted the errors compared to the true Bachelier model.
 set.seed(1)
 S0 = 1
 T = 1
