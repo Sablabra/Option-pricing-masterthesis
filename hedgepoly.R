@@ -1,3 +1,4 @@
+##Performing a Hedge expirement, using the Polynomial regression. The degree of the polynomial can be changed in line 19
 source("functions.r")
 S0<-1
 T<-1
